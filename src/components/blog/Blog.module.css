@@ -1,0 +1,78 @@
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 132px 0;
+}
+
+.testimonials .testimonialsInfo {
+  margin: 0 107px;
+}
+
+.testimonials .testimonialsInfo h2 {
+  font-size: 89px;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 79px;
+}
+
+.testimonials .testimonialsInfo h2 span {
+  border-top: 4px solid #f47b20;
+  animation: changeSpan 2s ease-in-out alternate infinite;
+}
+
+.testimonials .testimonialsInfo .cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 68px;
+}
+
+.testimonials .testimonialsInfo .indicators ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 82.5px;
+}
+
+.testimonials .testimonialsInfo .indicators ul li {
+  width: 320px;
+  height: 4px;
+  background-color: #f47b20;
+  opacity: 0.57;
+  cursor: pointer;
+  margin-right: 35px;
+  transition: all 0.3s ease-in-out;
+  animation: changeListColor 5s ease-in-out infinite alternate;
+}
+
+.testimonials .testimonialsInfo .indicators ul li.active,
+.testimonials .testimonialsInfo .indicators ul li:hover {
+  background-color: #f47b20;
+  opacity: 1;
+}
+
+@keyframes changeListColor {
+  0% {
+    background-color: #f47b20;
+  }
+  100% {
+    background-color: #47c3d3;
+  }
+}
+
+.testimonials .testimonialsInfo button {
+  background-color: #f47b20;
+  color: #fff;
+  border: none;
+  width: 212px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-family: Arial;
+  font-size: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials .testimonialsInfo button:hover {
+  background-color: #47c3d3;
+}

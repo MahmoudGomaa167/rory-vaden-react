@@ -1,0 +1,133 @@
+.presentation {
+  padding-bottom: 107px;
+}
+
+.presentation h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  margin-left: 107px;
+  margin-top: 38px;
+  margin-bottom: 84px;
+}
+
+.presentation h3 span {
+  border-top: 4px solid #f47b20;
+}
+
+.presentation .presentationSponsors {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: center;
+  position: relative;
+  padding: 0 125px;
+}
+
+.presentation .presentationSponsors img {
+  flex: 1 0 16.5%;
+  width: 189px;
+  height: 126px;
+}
+
+.presentation .left {
+  font-size: 53px;
+  position: absolute;
+  left: 0;
+  width: 230px;
+  height: 100%;
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.8));
+  border: none;
+  cursor: pointer;
+}
+
+.presentation .right {
+  font-size: 53px;
+  position: absolute;
+  right: 0;
+  width: 230px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), #fff);
+  border: none;
+  cursor: pointer;
+}
+
+.presentation .presentationImage {
+  margin-right: 38px;
+  align-self: center;
+  padding-top: 145px;
+}
+
+.presentation .presentationImage img {
+  margin-bottom: 169px;
+}
+
+.presentation .presentationImage .watchBtn {
+  text-align: center;
+}
+
+.presentation .presentationImage .watchBtn button {
+  width: 388px;
+  height: 69px;
+  border: 2px solid #000;
+  background-color: transparent;
+  font-family: "Oswald", sans-serif;
+  font-size: 27px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.presentation .presentationImage .watchBtn button i {
+  font-size: 46.5px;
+  margin-right: 25px;
+}
+
+.presentation .presentationInfo {
+  display: flex;
+  padding-top: 137px;
+}
+
+.presentation .presentationInfo h3 {
+  margin: 0;
+  font-size: 55px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 78px;
+}
+
+.presentation .presentationInfo ul {
+  list-style: disc;
+}
+
+.presentation .presentationInfo ul li {
+  font-size: 33px;
+  font-family: Arial;
+  margin-bottom: 55px;
+}
+
+.presentation .presentationInfo ul li:last-of-type {
+  margin-bottom: 78px;
+}
+
+.presentation .presentationInfo .presentationBrief button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 714px;
+  height: 105px;
+  font-family: "Oswald", sans-serif;
+  font-size: 38px;
+  color: #fff;
+  border: none;
+  background-color: #f47b20;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.presentation .presentationInfo .presentationBrief button:hover {
+  background-color: #47c3d3;
+}

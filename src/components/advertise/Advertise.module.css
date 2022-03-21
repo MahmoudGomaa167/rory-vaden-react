@@ -1,0 +1,35 @@
+.advertise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 63px;
+  background-color: #383637;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  position: relative;
+  animation: changeBackground 0.5s alternate infinite ease-in-out;
+}
+
+.advertise a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.advertise i {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-color: #383637;
+  }
+  100% {
+    background: linear-gradient(to bottom, #f47b20, #ffa45e);
+  }
+}

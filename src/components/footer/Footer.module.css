@@ -1,0 +1,104 @@
+footer {
+  background-color: #383637;
+  padding-top: 47px;
+}
+
+footer .footerInfo {
+  display: flex;
+  margin-left: 107px;
+}
+
+footer .footerInfo .footerImage {
+  margin-right: 156px;
+}
+
+footer .footerInfo .footerList ul {
+  display: flex;
+  column-gap: 82px;
+  margin-bottom: 83px;
+}
+
+footer .footerInfo .footerList ul li a {
+  color: #fff;
+  font-family: Arial;
+  font-size: 34px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+footer .footerInfo .footerList ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f47b20;
+  transition: all 0.3s ease-in-out;
+  animation: changeAfter 1s ease-in-out infinite alternate;
+}
+
+footer .footerInfo .footerList ul li a.active::after,
+footer .footerInfo .footerList ul li a:hover::after {
+  width: 100%;
+}
+
+@keyframes changeAfter {
+  0% {
+    background-color: #f47b20;
+  }
+  100% {
+    background-color: #47c3d3;
+  }
+}
+
+footer .footerInfo .footerList .listLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 65px;
+  position: relative;
+}
+
+footer .footerInfo .footerList .listLinks::after {
+  content: "";
+  position: absolute;
+  right: -45.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 108px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+footer .footerInfo .footerList .listLinks:last-of-type::after {
+  content: none;
+}
+
+footer .footerIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 72px;
+  width: 100%;
+  padding-bottom: 30.8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.69);
+}
+
+footer .footerIcons i {
+  color: rgba(255, 255, 255, 0.67);
+  font-size: 27px;
+  cursor: pointer;
+}
+
+footer .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 25.8px 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  color: #fff;
+}

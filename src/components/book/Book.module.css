@@ -1,0 +1,81 @@
+.book {
+  background-color: #f9f9f9;
+  padding-bottom: 225px;
+}
+
+.book .bookInfo {
+  display: flex;
+}
+
+.book .bookInfo .bookImage {
+  margin-left: 107px;
+  position: relative;
+  z-index: 2;
+  margin-top: 225px;
+}
+
+.book .bookInfo .bookImage .square {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border: 4px solid #f47b20;
+  border-radius: 12px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.book .bookInfo .bookImage .square:first-of-type {
+  background-color: #f47b20;
+  left: -363px;
+  top: -190px;
+  animation: changeSquareColor 5s ease-in-out alternate infinite,
+    changeSquareBack 6s ease-in-out alternate infinite;
+}
+
+.book .bookInfo .bookImage .square:last-of-type {
+  left: -100px;
+  animation: changeSquareColor 9s ease-in-out alternate infinite;
+}
+
+@keyframes changeSquareBack {
+  0% {
+    background-color: #f47b20;
+  }
+  100% {
+    background-color: #47c3d3;
+  }
+}
+
+@keyframes changeSquareColor {
+  0% {
+    border-color: #f47b20;
+    transform: rotate(45deg);
+  }
+  100% {
+    border-color: #47c3d3;
+    transform: rotate(400deg);
+  }
+}
+
+.book .bookInfo .bookBrief {
+  max-width: 758px;
+  margin-left: 68px;
+  margin-top: 150px;
+}
+
+.book .bookInfo .bookBrief h3 {
+  font-size: 37px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  margin-bottom: 53px;
+}
+
+.book .bookInfo .bookBrief p {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.book .bookInfo .bookBrief p:first-of-type {
+  margin-bottom: 40px;
+}

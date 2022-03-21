@@ -1,0 +1,155 @@
+.hero {
+  background-image: url(../../images/header/Shape.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  overflow: hidden;
+}
+
+.hero .heroInfo {
+  margin-top: 67px;
+  margin-left: 104px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero .heroInfo img {
+  margin-bottom: 45px;
+}
+
+.hero .heroInfo h1 {
+  max-width: 840px;
+  font-size: 92px;
+  font-weight: bold;
+  color: #fff;
+  font-family: Arial;
+  margin-bottom: 54px;
+}
+
+.hero .heroInfo h1 span {
+  border-top: 8px solid #f47b20;
+  animation: changeSpan 2s ease-in-out infinite alternate;
+}
+
+.hero .heroInfo p {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  margin-bottom: 72px;
+}
+
+.hero .heroInfo p span {
+  background-color: #f47b20;
+  padding: 3px 5px;
+  animation: changeSpanColor 1s ease-in-out infinite alternate;
+}
+
+@keyframes changeSpanColor {
+  0% {
+    background-color: #f47b20;
+  }
+  100% {
+    background-color: #47c3d3;
+  }
+}
+
+.hero .heroInfo .heroBtns {
+  display: flex;
+}
+
+.hero .heroInfo .watchBtn {
+  min-width: 362px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.hero .heroInfo .watchBtn i {
+  margin-right: 24px;
+  font-size: 43.5px;
+}
+
+.hero .heroInfo .requestBtn {
+  min-width: 415px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+  color: #fff;
+  background-color: #f47b20;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hero .heroImage img:first-of-type {
+  position: absolute;
+  right: 0;
+}
+
+.hero .heroImage img:nth-of-type(2) {
+  position: absolute;
+  right: -64px;
+  top: -19px;
+  filter: grayscale();
+  z-index: 10;
+}
+
+.hero .shape {
+  position: absolute;
+  left: 0;
+}
+
+.hero .shape:first-of-type {
+  width: 64%;
+  height: 100%;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  background-color: #47c3d3;
+  opacity: 0.4;
+  z-index: 3;
+  animation: changeShapeColor 1s 1s ease-in-out infinite alternate;
+}
+
+.hero .shape:nth-of-type(2) {
+  width: 69%;
+  height: 100%;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  background-color: #47c3d3;
+  opacity: 0.3;
+  z-index: 1;
+  animation: changeShapeColor 1s 1s ease-in-out infinite alternate;
+}
+
+.hero .shape:nth-of-type(3) {
+  width: 75%;
+  height: 100%;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  background-color: #47c3d3;
+  opacity: 0.2;
+  z-index: 2;
+  animation: changeShapeColor 1s 1s ease-in-out infinite alternate;
+}
+
+@keyframes changeShapeColor {
+  0% {
+    background-color: #47c3d3;
+  }
+  100% {
+    background-color: #f47b20;
+  }
+}

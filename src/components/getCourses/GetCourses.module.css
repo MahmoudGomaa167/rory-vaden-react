@@ -1,0 +1,62 @@
+.getCourses {
+  background-color: #fff;
+  max-width: 1154px;
+  max-height: 251px;
+  margin: auto;
+  padding: 25px 54px 23px 75px;
+  text-align: center;
+  box-shadow: -5px -5px 8px rgb(116, 116, 116, 0.16);
+  margin-top: -82px;
+  border-radius: 11px;
+  position: relative;
+  z-index: 10;
+}
+
+.getCourses h2 {
+  font-size: 36px;
+  font-family: Arial;
+  margin-bottom: 12px;
+}
+
+.getCourses p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #a0b0a0;
+  margin-bottom: 37px;
+}
+.getCourses .signup-form {
+  display: flex;
+  align-items: center;
+}
+
+.getCourses .signupForm input {
+  background-color: #eee;
+  border: none;
+  outline: none;
+  min-width: 765px;
+  height: 84px;
+  font-size: 36px;
+  padding: 22px 0 21px 38px;
+  margin-right: 17px;
+}
+
+.getCourses .signupForm input::placeholder {
+  color: #b7b7b7;
+}
+
+.getCourses .signupForm button {
+  min-width: 243px;
+  height: 84px;
+  border: none;
+  background-color: #f47b20;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: Arial;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.getCourses .signupForm button:hover {
+  background-color: #47c3d3;
+}

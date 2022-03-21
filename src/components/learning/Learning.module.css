@@ -1,0 +1,28 @@
+.learning {
+  margin-bottom: 132px;
+}
+
+.learning .learningInfo {
+  display: flex;
+}
+
+.learning .learningInfo .learningBrief {
+  width: 764px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 580px;
+  align-self: center;
+  margin-left: 44px;
+}
+
+.learning .learningInfo .learningBrief h2 {
+  font-family: Arial;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.learning .learningInfo .learningBrief p {
+  font-size: 24px;
+  font-family: Arial;
+}

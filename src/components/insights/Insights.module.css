@@ -1,0 +1,38 @@
+.insights {
+  margin: 132px 0 175px;
+  height: 847px;
+  background-image: url(../../images/insights/bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.insights .insightsInfo {
+  margin: 0 105px 0 107px;
+}
+
+.insights .insightsInfo h2 {
+  padding-top: 53px;
+  font-family: "Oswald", sans-serif;
+  font-size: 49px;
+  color: #fff;
+  margin-bottom: 53px;
+}
+
+.insights .insightsInfo .insightsNetworks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 57px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+  margin-left: 104px;
+}
+
+.insights .insightsInfo .insightsNetworks img {
+  flex: 0 0 21%;
+  max-width: 340px;
+  max-height: 171px;
+  object-fit: contain;
+  mix-blend-mode: color-dodge;
+}

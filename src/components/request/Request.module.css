@@ -1,0 +1,95 @@
+.request {
+  padding: 61px 0 123px;
+  background-image: url(../../images/request/hi7x6eo2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.request .requestInfo {
+  margin-left: 107px;
+  max-width: 932px;
+  position: relative;
+  z-index: 2;
+}
+
+.request .requestInfo h2 {
+  color: #fff;
+  font-family: Arial;
+  font-size: 38px;
+  margin-bottom: 77px;
+}
+
+.request .requestInfo p {
+  color: #fff;
+  font-family: Arial;
+  font-size: 33px;
+  line-height: 1.5;
+  margin-bottom: 46px;
+}
+
+.request .requestInfo button {
+  width: 607px;
+  height: 87px;
+  background-color: #f47b20;
+  color: #fff;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.request .requestInfo button:hover {
+  background-color: #47c3d3;
+}
+
+.request .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.59);
+}
+
+.request .square {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 800px;
+  height: 800px;
+  border: 4px solid #f47b20;
+  border-radius: 19px;
+  z-index: 3;
+  transform: rotate(45deg);
+}
+
+.request .square:first-of-type {
+  top: -189px;
+  right: -100px;
+  backdrop-filter: brightness(2);
+  animation: rotateSquare 9s ease-in-out infinite alternate;
+}
+
+.request .square:last-of-type {
+  top: -203px;
+  right: -46px;
+  transform: rotate(43deg);
+  animation: rotateSquare 6s ease-in-out infinite alternate;
+}
+
+@keyframes rotateSquare {
+  0% {
+    border-color: #f47b20;
+    transform: rotate(45deg);
+  }
+  100% {
+    border-color: #47c3d3;
+    transform: rotate(400deg);
+  }
+}

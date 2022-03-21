@@ -1,0 +1,57 @@
+.meet {
+  padding: 132px 0;
+}
+
+.meet .meetInfo {
+  display: flex;
+}
+
+.meet .meetInfo .meetBrief {
+  margin-left: 107px;
+  max-width: 878px;
+}
+
+.meet .meetInfo .meetBrief h2 {
+  font-family: Arial;
+  font-size: 45px;
+  margin-bottom: 48px;
+}
+
+.meet .meetInfo .meetBrief h2 span {
+  border-top: 6px solid #f47b20;
+  padding-top: 25.5px;
+  animation: changeSpan 2s ease-in-out infinite alternate;
+}
+
+@keyframes changeSpan {
+  0% {
+    border-color: #f47b20;
+  }
+  100% {
+    border-color: #47c3d3;
+  }
+}
+
+.meet .meetInfo .meetBrief p {
+  font-family: Arial;
+  font-size: 41px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+.meet .meetInfo .meetBrief button {
+  width: 304px;
+  height: 108px;
+  background-color: #f47b20;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+  font-size: 55px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.meet .meetInfo .meetBrief button:hover {
+  background-color: #47c3d3;
+}

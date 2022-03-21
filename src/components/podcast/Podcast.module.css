@@ -1,0 +1,201 @@
+.podcast {
+  padding: 228px 0;
+  overflow: hidden;
+}
+
+.podcast .podcastInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.podcast .podcastInfo .podcastBrief {
+  margin-left: 107px;
+}
+
+.podcast .podcastInfo .podcastBrief h2 {
+  font-family: Arial;
+  font-size: 45px;
+  margin-bottom: 24px;
+}
+
+.podcast .podcastInfo .podcastBrief ul {
+  max-width: 749px;
+}
+
+.podcast .podcastInfo .podcastBrief ul li {
+  font-family: Arial;
+  font-size: 33px;
+  position: relative;
+  display: flex;
+  padding-bottom: 75px;
+  justify-content: space-between;
+  line-height: 1.3;
+}
+
+.podcast .podcastInfo .podcastBrief ul li::before {
+  content: "";
+  position: absolute;
+  left: -44.5px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #f47b20;
+  transform: rotate(45deg);
+  background-color: #fff;
+  z-index: 2;
+  animation: changeIndicatorsBorder 2s ease-in-out infinite alternate;
+}
+
+@keyframes changeIndicatorsBorder {
+  0% {
+    border-color: #f47b20;
+    transform: rotate(45deg);
+  }
+  100% {
+    border-color: #47c3d3;
+    transform: rotate(400deg);
+  }
+}
+
+.podcast .podcastInfo .podcastBrief ul li:first-of-type::before,
+.podcast .podcastInfo .podcastBrief ul li:last-of-type::before {
+  background-color: #f47b20;
+  animation: changeIndicatorsColor 2s ease-in-out infinite alternate,
+    changeIndicatorsBorder 2s ease-in-out infinite alternate;
+}
+
+@keyframes changeIndicatorsColor {
+  0% {
+    background-color: #f47b20;
+  }
+  100% {
+    background-color: #47c3d3;
+  }
+}
+
+.podcast .podcastInfo .podcastBrief ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-left: 2px solid #f47b20;
+  left: -31.5px;
+  z-index: 1;
+  animation: changeBorderColor 2s ease-in-out infinite alternate;
+}
+
+@keyframes changeBorderColor {
+  0% {
+    border-color: #f47b20;
+  }
+  100% {
+    border-color: #47c3d3;
+  }
+}
+
+.podcast .podcastInfo .podcastBrief ul li:last-of-type::after {
+  content: none;
+}
+
+.podcast .podcastInfo .podcastBrief button {
+  min-width: 714px;
+  height: 105px;
+  background-color: #f47b20;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 38px;
+  border: none;
+  cursor: pointer;
+  padding: 0 75.5px;
+}
+
+.podcast .podcastInfo .podcastImage {
+  position: relative;
+  z-index: 2;
+  right: -120px;
+}
+
+.podcast .podcastInfo .podcastImage .square {
+  width: 500px;
+  height: 500px;
+  border: 4px solid #f47b20;
+  border-radius: 12px;
+  background-color: transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: 10;
+}
+
+.podcast .podcastInfo .podcastImage .square:first-of-type {
+  top: -94px;
+  right: 444px;
+  z-index: -1;
+  animation: changeSquare 5s ease-in-out alternate infinite;
+}
+
+.podcast .podcastInfo .podcastImage .square:nth-of-type(2) {
+  top: 23px;
+  right: 241px;
+  z-index: -1;
+  animation: changeSquare 4s ease-in-out alternate infinite;
+}
+
+.podcast .podcastInfo .podcastImage .square:nth-of-type(3) {
+  top: 23px;
+  right: 148px;
+  z-index: -1;
+  animation: changeSquare 6s ease-in-out alternate infinite;
+}
+
+.podcast .podcastInfo .podcastImage .square:nth-of-type(4) {
+  top: 290px;
+  left: -93px;
+  z-index: -1;
+  animation: changeSquare 7s ease-in-out alternate infinite;
+}
+
+.podcast .podcastInfo .podcastImage .square:nth-of-type(5) {
+  top: 400px;
+  left: -55px;
+  z-index: -1;
+  animation: changeSquare 8s ease-in-out alternate infinite;
+}
+
+.podcast .podcastInfo .podcastImage .square:nth-of-type(6) {
+  top: 607px;
+  left: 5px;
+  z-index: -1;
+  animation: changeSquare 2s ease-in-out alternate infinite;
+}
+
+.podcast .podcastInfo .podcastImage .square:nth-of-type(7) {
+  top: 368px;
+  right: -138px;
+  z-index: 1;
+  animation: changeSquare 5s ease-in-out alternate infinite;
+}
+
+.podcast .podcastInfo .podcastImage .square:nth-of-type(8) {
+  top: 470px;
+  right: -138px;
+  z-index: 1;
+  animation: changeSquare 9s ease-in-out alternate infinite;
+}
+
+.podcast .podcastInfo .podcastImage .square:nth-of-type(9) {
+  bottom: 0;
+  left: 5px;
+  z-index: -1;
+  animation: changeSquare 3s ease-in-out alternate infinite;
+}
+
+@keyframes changeSquare {
+  0% {
+    border-color: #f47b20;
+    transform: rotate(45deg);
+  }
+  100% {
+    border-color: #47c3d3;
+    transform: rotate(400deg);
+  }
+}
